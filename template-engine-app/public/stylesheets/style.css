@@ -1,0 +1,62 @@
+
+body,
+html {
+  width: 100%;
+  height: 100%; 
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  max-width: 65px;
+  border-width: 3px;
+  border-color: #dcdaeec7; 
+}
+
+.faded {
+  color: #dfe2f0f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+header.startup {
+  background-position: center;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/02/06/18560fdccac9aa7.jpg");
+  background-size:cover;
+  height: 100%;
+}
+
+header hr {
+ margin-bottom: 10px;
+}
+
+header.startup h4 {
+  font-size: 3rem; 
+}
+
+.btn {
+  width: 200px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn-xl {
+  padding: 20px;
+}
+
+.btn-primary {
+  background-color: #225c9e6b;
+  border-color: #0074f8d7; 
+}
+
+.btn-primary:hover {
+  background-color: #0a84e975;
+  border-color: #0859ee94;
+  border-width: 5px;
+  cursor: pointer;
+}
+  

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <h1><%= title %></h1>
+        <div class=" row m-2 p-2 card w-75">
+            <form method="POST" action="/delete/<%= id %>">
+                <h5 class=" card-header card-title"><%= player.name %></h5>
+                <div class="card-body">
+                    <p class="card-text">Age: <%= player.age %></p>
+                    <p class="card-text">Position: <%= player.position %></p>
+                    <p class="card-text">Country: <%= player.country %></p>
+                    <input type="submit" class="btn btn-primary" value="Delete">
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>

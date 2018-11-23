@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Assignment-20.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1><%= title %> using GET</h1>
+    <br>
+    <h2><%= message %></h2>
+    <br>
+    <br>
+    -----------------------------------------------------------------------
+    <br>
+    <br>
+
+    <h1><%= title %> using POST</h1>
+    <form action="/example_post/:id" method="POST">
+      <h2>Enter id to be passed <input type="text" name="id"> <input type="submit" value="Submit"></h2>
+    </form>
+</body>
+</html>

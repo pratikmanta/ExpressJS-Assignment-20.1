@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+    <h1><%= title %></h1>
+    <a href="/create" class="btn bg-primary text-light btn-block" style="text-decoration: none"><h2>Add Players</h2></a> 
+    <% for (let i=0; i<players.length; i++) { %>
+      <div class="m-2 p-2 card w-75">
+        <h5 class=" card-header card-title"><%= players[i].name %></h5>
+          <div class="card-body">
+            <p class="card-text">Age: <%= players[i].age %></p>
+            <p class="card-text">Position: <%= players[i].position %></p>
+            <p class="card-text">Country: <%= players[i].country %></p>
+            <a href="/update/<%= players[i]._id %>">Edit</a>
+            <a href="/delete/<%= players[i]._id %>">Delete</a>
+          </div>
+        </div>
+    <% } %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assingment 20.1 </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- sample webpage to show rendering using ejs -->
+    <nav class="navbar bg-secondary">
+        <a href="#">
+          <h2 class="navbar-brand mb-0 h1 text-light"><%= logo %></h2>
+        </a>
+      </nav>
+    <header class="startup text-center text-white d-flex">      
+          <div class="col-lg-12 my-auto">
+            <div class="container my-auto">
+                <div class="row">
+                  <div class="col-lg-12 col-md-10 col-sm-12 my-auto">
+                      <h4 class="text-uppercase faded"><strong><%= title %></strong></h4>
+                    <hr>
+                    <hr>
+                    <h3>Page rendered using template engine Ejs</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </header>
+  </body>
+</html>
+
